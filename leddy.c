@@ -8,7 +8,11 @@
 #include <linux/fs.h>
 #include <asm/io.h>
 
-#define GPIO_BASE 0x20200000
+/* Pi 4 32bit, Low Peripheral Mode */
+#define GPIO_BASE 0xFE200000
+
+/* Pi Zero W */
+/* #define GPIO_BASE 0x20200000 */
 
 #define GPIO_FSEL_INPUT  0b000
 #define GPIO_FSEL_OUTPUT 0b001
